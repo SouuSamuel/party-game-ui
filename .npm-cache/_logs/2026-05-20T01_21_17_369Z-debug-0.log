@@ -1,0 +1,493 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\samuj\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.6.2
+2 info using node@v22.18.0
+3 silly config load:file:C:\Users\samuj\AppData\Roaming\npm\node_modules\npm\npmrc
+4 silly config load:file:D:\arquivos\samuel\tudo\party-game-ui\.npmrc
+5 silly config load:file:C:\Users\samuj\.npmrc
+6 silly config load:file:C:\Users\samuj\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install react-native@0.81.5 react-dom@19.1.0 expo-router@~6.0.23 @react-native-async-storage/async-storage@2.2.0 expo-av@~16.0.8
+8 verbose argv "install" "react-native@0.81.5" "react-dom@19.1.0" "expo-router@~6.0.23" "@react-native-async-storage/async-storage@2.2.0" "expo-av@~16.0.8" "--cache" ".npm-cache" "--no-audit" "--no-fund" "--fetch-timeout" "60000" "--fetch-retries" "2" "--strict-ssl" "false"
+9 verbose logfile logs-max:10 dir:D:\arquivos\samuel\tudo\party-game-ui\.npm-cache\_logs\2026-05-20T01_21_17_369Z-
+10 verbose logfile D:\arquivos\samuel\tudo\party-game-ui\.npm-cache\_logs\2026-05-20T01_21_17_369Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest @react-native-async-storage/async-storage@2.2.0
+15 silly packumentCache full:https://registry.npmjs.org/@react-native-async-storage%2fasync-storage cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/@react-native-async-storage%2fasync-storage 347ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/@react-native-async-storage%2fasync-storage set size:undefined disposed:false
+18 silly fetch manifest react-native@0.81.5
+19 silly packumentCache full:https://registry.npmjs.org/react-native cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/react-native 300ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/react-native set size:undefined disposed:false
+22 silly fetch manifest @types/react@~19.1.0
+23 silly packumentCache full:https://registry.npmjs.org/@types%2freact cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/@types%2freact 168ms (cache miss)
+25 silly packumentCache full:https://registry.npmjs.org/@types%2freact set size:undefined disposed:false
+26 silly fetch manifest react@19.1.0
+27 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+28 http fetch GET 200 https://registry.npmjs.org/react 233ms (cache miss)
+29 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+30 silly fetch manifest expo-av@~16.0.8
+31 silly packumentCache full:https://registry.npmjs.org/expo-av cache-miss
+32 http fetch GET 200 https://registry.npmjs.org/expo-av 67ms (cache miss)
+33 silly packumentCache full:https://registry.npmjs.org/expo-av set size:undefined disposed:false
+34 silly fetch manifest expo@~54.0.0
+35 silly packumentCache full:https://registry.npmjs.org/expo cache-miss
+36 http fetch GET 200 https://registry.npmjs.org/expo 169ms (cache miss)
+37 silly packumentCache full:https://registry.npmjs.org/expo set size:undefined disposed:false
+38 silly fetch manifest @expo/dom-webview@*
+39 silly packumentCache full:https://registry.npmjs.org/@expo%2fdom-webview cache-miss
+40 http fetch GET 200 https://registry.npmjs.org/@expo%2fdom-webview 86ms (cache miss)
+41 silly packumentCache full:https://registry.npmjs.org/@expo%2fdom-webview set size:undefined disposed:false
+42 silly fetch manifest @expo/metro-runtime@*
+43 silly packumentCache full:https://registry.npmjs.org/@expo%2fmetro-runtime cache-miss
+44 http fetch GET 200 https://registry.npmjs.org/@expo%2fmetro-runtime 98ms (cache miss)
+45 silly packumentCache full:https://registry.npmjs.org/@expo%2fmetro-runtime set size:undefined disposed:false
+46 silly fetch manifest react-dom@19.1.0
+47 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+48 http fetch GET 200 https://registry.npmjs.org/react-dom 237ms (cache miss)
+49 silly packumentCache full:https://registry.npmjs.org/react-dom set size:undefined disposed:false
+50 silly fetch manifest react-native-webview@*
+51 silly packumentCache full:https://registry.npmjs.org/react-native-webview cache-miss
+52 http fetch GET 200 https://registry.npmjs.org/react-native-webview 114ms (cache miss)
+53 silly packumentCache full:https://registry.npmjs.org/react-native-webview set size:undefined disposed:false
+54 silly fetch manifest react-native-web@*
+55 silly packumentCache full:https://registry.npmjs.org/react-native-web cache-miss
+56 http fetch GET 200 https://registry.npmjs.org/react-native-web 106ms (cache miss)
+57 silly packumentCache full:https://registry.npmjs.org/react-native-web set size:undefined disposed:false
+58 silly fetch manifest expo-router@~6.0.23
+59 silly packumentCache full:https://registry.npmjs.org/expo-router cache-miss
+60 http fetch GET 200 https://registry.npmjs.org/expo-router 94ms (cache miss)
+61 silly packumentCache full:https://registry.npmjs.org/expo-router set size:undefined disposed:false
+62 silly fetch manifest @react-navigation/drawer@^7.5.0
+63 silly packumentCache full:https://registry.npmjs.org/@react-navigation%2fdrawer cache-miss
+64 http fetch GET 200 https://registry.npmjs.org/@react-navigation%2fdrawer 283ms (cache miss)
+65 silly packumentCache full:https://registry.npmjs.org/@react-navigation%2fdrawer set size:undefined disposed:false
+66 silly fetch manifest @react-navigation/native@^7.2.4
+67 silly packumentCache full:https://registry.npmjs.org/@react-navigation%2fnative cache-miss
+68 http fetch GET 200 https://registry.npmjs.org/@react-navigation%2fnative 113ms (cache miss)
+69 silly packumentCache full:https://registry.npmjs.org/@react-navigation%2fnative set size:undefined disposed:false
+70 silly fetch manifest react-native-gesture-handler@~2.28.0
+71 silly packumentCache full:https://registry.npmjs.org/react-native-gesture-handler cache-miss
+72 http fetch GET 200 https://registry.npmjs.org/react-native-gesture-handler 78ms (cache miss)
+73 silly packumentCache full:https://registry.npmjs.org/react-native-gesture-handler set size:undefined disposed:false
+74 silly fetch manifest react-native-reanimated@~4.1.0
+75 silly packumentCache full:https://registry.npmjs.org/react-native-reanimated cache-miss
+76 http fetch GET 200 https://registry.npmjs.org/react-native-reanimated 368ms (cache miss)
+77 silly packumentCache full:https://registry.npmjs.org/react-native-reanimated set size:undefined disposed:false
+78 silly fetch manifest react-native-worklets@0.5 - 0.8
+79 silly packumentCache full:https://registry.npmjs.org/react-native-worklets cache-miss
+80 http fetch GET 200 https://registry.npmjs.org/react-native-worklets 79ms (cache miss)
+81 silly packumentCache full:https://registry.npmjs.org/react-native-worklets set size:undefined disposed:false
+82 silly fetch manifest @babel/core@*
+83 silly packumentCache full:https://registry.npmjs.org/@babel%2fcore cache-miss
+84 http fetch GET 200 https://registry.npmjs.org/@babel%2fcore 83ms (cache miss)
+85 silly packumentCache full:https://registry.npmjs.org/@babel%2fcore set size:undefined disposed:false
+86 silly fetch manifest @react-native/metro-config@*
+87 silly packumentCache full:https://registry.npmjs.org/@react-native%2fmetro-config cache-miss
+88 http fetch GET 200 https://registry.npmjs.org/@react-native%2fmetro-config 311ms (cache miss)
+89 silly packumentCache full:https://registry.npmjs.org/@react-native%2fmetro-config set size:undefined disposed:false
+90 silly fetch manifest react-native-safe-area-context@~5.6.0
+91 silly packumentCache full:https://registry.npmjs.org/react-native-safe-area-context cache-miss
+92 http fetch GET 200 https://registry.npmjs.org/react-native-safe-area-context 82ms (cache miss)
+93 silly packumentCache full:https://registry.npmjs.org/react-native-safe-area-context set size:undefined disposed:false
+94 silly fetch manifest react-native-screens@~4.16.0
+95 silly packumentCache full:https://registry.npmjs.org/react-native-screens cache-miss
+96 http fetch GET 200 https://registry.npmjs.org/react-native-screens 144ms (cache miss)
+97 silly packumentCache full:https://registry.npmjs.org/react-native-screens set size:undefined disposed:false
+98 silly fetch manifest @testing-library/react-native@>= 12.0.0
+99 silly packumentCache full:https://registry.npmjs.org/@testing-library%2freact-native cache-miss
+100 http fetch GET 200 https://registry.npmjs.org/@testing-library%2freact-native 365ms (cache miss)
+101 silly packumentCache full:https://registry.npmjs.org/@testing-library%2freact-native set size:undefined disposed:false
+102 silly fetch manifest jest@>=29.0.0
+103 silly packumentCache full:https://registry.npmjs.org/jest cache-miss
+104 http fetch GET 200 https://registry.npmjs.org/jest 92ms (cache miss)
+105 silly packumentCache full:https://registry.npmjs.org/jest set size:undefined disposed:false
+106 silly fetch manifest node-notifier@^8.0.1 || ^9.0.0 || ^10.0.0
+107 silly packumentCache full:https://registry.npmjs.org/node-notifier cache-miss
+108 http fetch GET 200 https://registry.npmjs.org/node-notifier 91ms (cache miss)
+109 silly packumentCache full:https://registry.npmjs.org/node-notifier set size:undefined disposed:false
+110 silly fetch manifest react-test-renderer@>=18.2.0
+111 silly packumentCache full:https://registry.npmjs.org/react-test-renderer cache-miss
+112 http fetch GET 200 https://registry.npmjs.org/react-test-renderer 413ms (cache miss)
+113 silly packumentCache full:https://registry.npmjs.org/react-test-renderer set size:undefined disposed:false
+114 silly fetch manifest react@^19.2.6
+115 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+116 http cache https://registry.npmjs.org/react 26ms (cache hit)
+117 silly packumentCache full:https://registry.npmjs.org/react set size:6650647 disposed:false
+118 silly fetch manifest expo-constants@~18.0.0
+119 silly packumentCache full:https://registry.npmjs.org/expo-constants cache-miss
+120 http fetch GET 200 https://registry.npmjs.org/expo-constants 96ms (cache miss)
+121 silly packumentCache full:https://registry.npmjs.org/expo-constants set size:undefined disposed:false
+122 silly fetch manifest expo-linking@^8.0.11
+123 silly packumentCache full:https://registry.npmjs.org/expo-linking cache-miss
+124 http fetch GET 200 https://registry.npmjs.org/expo-linking 69ms (cache miss)
+125 silly packumentCache full:https://registry.npmjs.org/expo-linking set size:undefined disposed:false
+126 silly fetch manifest react-server-dom-webpack@~19.0.4 || ~19.1.5 || ~19.2.4
+127 silly packumentCache full:https://registry.npmjs.org/react-server-dom-webpack cache-miss
+128 http fetch GET 200 https://registry.npmjs.org/react-server-dom-webpack 375ms (cache miss)
+129 silly packumentCache full:https://registry.npmjs.org/react-server-dom-webpack set size:undefined disposed:false
+130 silly fetch manifest react-dom@^19.2.6
+131 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+132 http cache https://registry.npmjs.org/react-dom 26ms (cache hit)
+133 silly packumentCache full:https://registry.npmjs.org/react-dom set size:8868827 disposed:false
+134 silly fetch manifest webpack@^5.59.0
+135 silly packumentCache full:https://registry.npmjs.org/webpack cache-miss
+136 http fetch GET 200 https://registry.npmjs.org/webpack 159ms (cache miss)
+137 silly packumentCache full:https://registry.npmjs.org/webpack set size:undefined disposed:false
+138 silly placeDep ROOT @react-native-async-storage/async-storage@2.2.0 OK for: hangout@1.0.0 want: 2.2.0
+139 silly placeDep ROOT expo-av@16.0.8 OK for: hangout@1.0.0 want: ~16.0.8
+140 silly placeDep ROOT expo-router@6.0.23 REPLACE for: hangout@1.0.0 want: ~6.0.23
+141 silly placeDep ROOT react-dom@19.1.0 REPLACE for: hangout@1.0.0 want: 19.1.0
+142 silly placeDep ROOT react-native@0.81.5 REPLACE for: hangout@1.0.0 want: 0.81.5
+143 silly fetch manifest merge-options@^3.0.4
+144 silly packumentCache full:https://registry.npmjs.org/merge-options cache-miss
+145 silly fetch manifest scheduler@^0.26.0
+146 silly packumentCache full:https://registry.npmjs.org/scheduler cache-miss
+147 silly fetch manifest glob@^7.1.1
+148 silly packumentCache full:https://registry.npmjs.org/glob cache-miss
+149 silly fetch manifest @react-native/codegen@0.81.5
+150 silly packumentCache full:https://registry.npmjs.org/@react-native%2fcodegen cache-miss
+151 silly fetch manifest @react-native/js-polyfills@0.81.5
+152 silly packumentCache full:https://registry.npmjs.org/@react-native%2fjs-polyfills cache-miss
+153 http fetch GET 200 https://registry.npmjs.org/merge-options 133ms (cache miss)
+154 silly packumentCache full:https://registry.npmjs.org/merge-options set size:undefined disposed:false
+155 silly fetch manifest @react-native/gradle-plugin@0.81.5
+156 silly packumentCache full:https://registry.npmjs.org/@react-native%2fgradle-plugin cache-miss
+157 http fetch GET 200 https://registry.npmjs.org/glob 252ms (cache miss)
+158 silly packumentCache full:https://registry.npmjs.org/glob set size:undefined disposed:false
+159 silly fetch manifest @react-native/assets-registry@0.81.5
+160 silly packumentCache full:https://registry.npmjs.org/@react-native%2fassets-registry cache-miss
+161 http fetch GET 200 https://registry.npmjs.org/@react-native%2fgradle-plugin 155ms (cache miss)
+162 silly packumentCache full:https://registry.npmjs.org/@react-native%2fgradle-plugin set size:undefined disposed:false
+163 silly fetch manifest @react-native/normalize-colors@0.81.5
+164 silly packumentCache full:https://registry.npmjs.org/@react-native%2fnormalize-colors cache-miss
+165 http fetch GET 200 https://registry.npmjs.org/@react-native%2fjs-polyfills 387ms (cache miss)
+166 silly packumentCache full:https://registry.npmjs.org/@react-native%2fjs-polyfills set size:undefined disposed:false
+167 silly fetch manifest @react-native/virtualized-lists@0.81.5
+168 silly packumentCache full:https://registry.npmjs.org/@react-native%2fvirtualized-lists cache-miss
+169 http fetch GET 200 https://registry.npmjs.org/@react-native%2fcodegen 869ms (cache miss)
+170 silly packumentCache full:https://registry.npmjs.org/@react-native%2fcodegen set size:undefined disposed:false
+171 silly fetch manifest @react-native/community-cli-plugin@0.81.5
+172 silly packumentCache full:https://registry.npmjs.org/@react-native%2fcommunity-cli-plugin cache-miss
+173 http fetch GET 200 https://registry.npmjs.org/@react-native%2fassets-registry 655ms (cache miss)
+174 silly packumentCache full:https://registry.npmjs.org/@react-native%2fassets-registry set size:undefined disposed:false
+175 http fetch GET 200 https://registry.npmjs.org/@react-native%2fnormalize-colors 630ms (cache miss)
+176 silly packumentCache full:https://registry.npmjs.org/@react-native%2fnormalize-colors set size:undefined disposed:false
+177 http fetch GET 200 https://registry.npmjs.org/scheduler 975ms (cache miss)
+178 silly packumentCache full:https://registry.npmjs.org/scheduler set size:undefined disposed:false
+179 http fetch GET 200 https://registry.npmjs.org/@react-native%2fvirtualized-lists 232ms (cache miss)
+180 silly packumentCache full:https://registry.npmjs.org/@react-native%2fvirtualized-lists set size:undefined disposed:false
+181 http fetch GET 200 https://registry.npmjs.org/@react-native%2fcommunity-cli-plugin 181ms (cache miss)
+182 silly packumentCache full:https://registry.npmjs.org/@react-native%2fcommunity-cli-plugin set size:undefined disposed:false
+183 silly placeDep ROOT merge-options@3.0.4 OK for: @react-native-async-storage/async-storage@2.2.0 want: ^3.0.4
+184 silly fetch manifest is-plain-obj@^2.1.0
+185 silly packumentCache full:https://registry.npmjs.org/is-plain-obj cache-miss
+186 http fetch GET 200 https://registry.npmjs.org/is-plain-obj 58ms (cache miss)
+187 silly packumentCache full:https://registry.npmjs.org/is-plain-obj set size:undefined disposed:false
+188 silly placeDep ROOT is-plain-obj@2.1.0 OK for: merge-options@3.0.4 want: ^2.1.0
+189 silly placeDep ROOT scheduler@0.26.0 OK for: react-dom@19.1.0 want: ^0.26.0
+190 silly fetch manifest @types/react@^19.1.0
+191 silly packumentCache full:https://registry.npmjs.org/@types%2freact cache-miss
+192 http cache https://registry.npmjs.org/@types%2freact 16ms (cache hit)
+193 silly packumentCache full:https://registry.npmjs.org/@types%2freact set size:2607900 disposed:false
+194 silly fetch manifest react@^19.1.0
+195 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+196 http cache https://registry.npmjs.org/react 21ms (cache hit)
+197 silly packumentCache full:https://registry.npmjs.org/react set size:6650647 disposed:false
+198 silly fetch manifest react-native@*
+199 silly packumentCache full:https://registry.npmjs.org/react-native cache-miss
+200 http cache https://registry.npmjs.org/react-native 42ms (cache hit)
+201 silly packumentCache full:https://registry.npmjs.org/react-native set size:15284045 disposed:false
+202 silly fetch manifest @react-native/jest-preset@0.85.3
+203 silly packumentCache full:https://registry.npmjs.org/@react-native%2fjest-preset cache-miss
+204 http fetch GET 200 https://registry.npmjs.org/@react-native%2fjest-preset 87ms (cache miss)
+205 silly packumentCache full:https://registry.npmjs.org/@react-native%2fjest-preset set size:undefined disposed:false
+206 silly fetch manifest @react-native-community/cli@*
+207 silly packumentCache full:https://registry.npmjs.org/@react-native-community%2fcli cache-miss
+208 http fetch GET 200 https://registry.npmjs.org/@react-native-community%2fcli 264ms (cache miss)
+209 silly packumentCache full:https://registry.npmjs.org/@react-native-community%2fcli set size:undefined disposed:false
+210 silly placeDep ROOT @react-native/assets-registry@0.81.5 OK for: react-native@0.81.5 want: 0.81.5
+211 silly placeDep node_modules/react-native @react-native/codegen@0.81.5 OK for: react-native@0.81.5 want: 0.81.5
+212 silly placeDep ROOT @react-native/community-cli-plugin@0.81.5 OK for: react-native@0.81.5 want: 0.81.5
+213 silly placeDep ROOT @react-native/gradle-plugin@0.81.5 OK for: react-native@0.81.5 want: 0.81.5
+214 silly placeDep node_modules/react-native @react-native/js-polyfills@0.81.5 OK for: react-native@0.81.5 want: 0.81.5
+215 silly placeDep ROOT @react-native/normalize-colors@0.81.5 OK for: react-native@0.81.5 want: 0.81.5
+216 silly placeDep node_modules/react-native @react-native/virtualized-lists@0.81.5 CONFLICT for: react-native@0.81.5 want: 0.81.5
+217 silly placeDep node_modules/react-native glob@7.2.3 OK for: react-native@0.81.5 want: ^7.1.1
+218 silly fetch manifest semver@^7.1.3
+219 silly packumentCache full:https://registry.npmjs.org/semver cache-miss
+220 silly fetch manifest metro-config@^0.83.1
+221 silly packumentCache full:https://registry.npmjs.org/metro-config cache-miss
+222 silly fetch manifest @react-native/dev-middleware@0.81.5
+223 silly packumentCache full:https://registry.npmjs.org/@react-native%2fdev-middleware cache-miss
+224 silly fetch manifest minimatch@^3.1.1
+225 silly packumentCache full:https://registry.npmjs.org/minimatch cache-miss
+226 http fetch GET 200 https://registry.npmjs.org/semver 192ms (cache miss)
+227 silly packumentCache full:https://registry.npmjs.org/semver set size:undefined disposed:false
+228 http fetch GET 200 https://registry.npmjs.org/metro-config 422ms (cache miss)
+229 silly packumentCache full:https://registry.npmjs.org/metro-config set size:undefined disposed:false
+230 http fetch GET 200 https://registry.npmjs.org/minimatch 426ms (cache miss)
+231 silly packumentCache full:https://registry.npmjs.org/minimatch set size:undefined disposed:false
+232 http fetch GET 200 https://registry.npmjs.org/@react-native%2fdev-middleware 449ms (cache miss)
+233 silly packumentCache full:https://registry.npmjs.org/@react-native%2fdev-middleware set size:undefined disposed:false
+234 silly placeDep ROOT @react-native/dev-middleware@0.81.5 OK for: @react-native/community-cli-plugin@0.81.5 want: 0.81.5
+235 silly placeDep node_modules/@react-native/community-cli-plugin metro-config@0.83.7 OK for: @react-native/community-cli-plugin@0.81.5 want: ^0.83.1
+236 silly placeDep node_modules/@react-native/community-cli-plugin semver@7.8.0 OK for: @react-native/community-cli-plugin@0.81.5 want: ^7.1.3
+237 silly fetch manifest ws@^6.2.3
+238 silly packumentCache full:https://registry.npmjs.org/ws cache-miss
+239 silly fetch manifest @react-native/debugger-frontend@0.81.5
+240 silly packumentCache full:https://registry.npmjs.org/@react-native%2fdebugger-frontend cache-miss
+241 silly fetch manifest metro@0.83.7
+242 silly packumentCache full:https://registry.npmjs.org/metro cache-miss
+243 silly fetch manifest metro-core@0.83.7
+244 silly packumentCache full:https://registry.npmjs.org/metro-core cache-miss
+245 silly fetch manifest metro-cache@0.83.7
+246 silly packumentCache full:https://registry.npmjs.org/metro-cache cache-miss
+247 http fetch GET 200 https://registry.npmjs.org/metro-cache 69ms (cache miss)
+248 silly packumentCache full:https://registry.npmjs.org/metro-cache set size:undefined disposed:false
+249 silly fetch manifest metro-runtime@0.83.7
+250 silly packumentCache full:https://registry.npmjs.org/metro-runtime cache-miss
+251 http fetch GET 200 https://registry.npmjs.org/ws 92ms (cache miss)
+252 silly packumentCache full:https://registry.npmjs.org/ws set size:undefined disposed:false
+253 http fetch GET 200 https://registry.npmjs.org/metro-core 116ms (cache miss)
+254 silly packumentCache full:https://registry.npmjs.org/metro-core set size:undefined disposed:false
+255 http fetch GET 200 https://registry.npmjs.org/metro 132ms (cache miss)
+256 silly packumentCache full:https://registry.npmjs.org/metro set size:undefined disposed:false
+257 http fetch GET 200 https://registry.npmjs.org/metro-runtime 72ms (cache miss)
+258 silly packumentCache full:https://registry.npmjs.org/metro-runtime set size:undefined disposed:false
+259 http fetch GET 200 https://registry.npmjs.org/@react-native%2fdebugger-frontend 151ms (cache miss)
+260 silly packumentCache full:https://registry.npmjs.org/@react-native%2fdebugger-frontend set size:undefined disposed:false
+261 silly placeDep ROOT @react-native/debugger-frontend@0.81.5 OK for: @react-native/dev-middleware@0.81.5 want: 0.81.5
+262 silly placeDep node_modules/@react-native/dev-middleware ws@6.2.3 OK for: @react-native/dev-middleware@0.81.5 want: ^6.2.3
+263 silly placeDep node_modules/@react-native/community-cli-plugin metro@0.83.7 OK for: metro-config@0.83.7 want: 0.83.7
+264 silly placeDep node_modules/@react-native/community-cli-plugin metro-cache@0.83.7 OK for: metro-config@0.83.7 want: 0.83.7
+265 silly placeDep node_modules/@react-native/community-cli-plugin metro-core@0.83.7 OK for: metro-config@0.83.7 want: 0.83.7
+266 silly placeDep node_modules/@react-native/community-cli-plugin metro-runtime@0.83.7 OK for: metro-config@0.83.7 want: 0.83.7
+267 silly fetch manifest accepts@^2.0.0
+268 silly packumentCache full:https://registry.npmjs.org/accepts cache-miss
+269 silly fetch manifest mime-types@^3.0.1
+270 silly packumentCache full:https://registry.npmjs.org/mime-types cache-miss
+271 silly fetch manifest hermes-parser@0.35.0
+272 silly packumentCache full:https://registry.npmjs.org/hermes-parser cache-miss
+273 silly fetch manifest metro-file-map@0.83.7
+274 silly packumentCache full:https://registry.npmjs.org/metro-file-map cache-miss
+275 silly fetch manifest metro-resolver@0.83.7
+276 silly packumentCache full:https://registry.npmjs.org/metro-resolver cache-miss
+277 http fetch GET 200 https://registry.npmjs.org/accepts 52ms (cache miss)
+278 silly packumentCache full:https://registry.npmjs.org/accepts set size:undefined disposed:false
+279 silly fetch manifest metro-cache-key@0.83.7
+280 silly packumentCache full:https://registry.npmjs.org/metro-cache-key cache-miss
+281 http fetch GET 200 https://registry.npmjs.org/hermes-parser 59ms (cache miss)
+282 silly packumentCache full:https://registry.npmjs.org/hermes-parser set size:undefined disposed:false
+283 silly fetch manifest metro-source-map@0.83.7
+284 silly packumentCache full:https://registry.npmjs.org/metro-source-map cache-miss
+285 http fetch GET 200 https://registry.npmjs.org/metro-file-map 69ms (cache miss)
+286 silly packumentCache full:https://registry.npmjs.org/metro-file-map set size:undefined disposed:false
+287 silly fetch manifest metro-symbolicate@0.83.7
+288 silly packumentCache full:https://registry.npmjs.org/metro-symbolicate cache-miss
+289 http fetch GET 200 https://registry.npmjs.org/mime-types 78ms (cache miss)
+290 silly packumentCache full:https://registry.npmjs.org/mime-types set size:undefined disposed:false
+291 silly fetch manifest metro-transform-worker@0.83.7
+292 silly packumentCache full:https://registry.npmjs.org/metro-transform-worker cache-miss
+293 http fetch GET 200 https://registry.npmjs.org/metro-resolver 80ms (cache miss)
+294 silly packumentCache full:https://registry.npmjs.org/metro-resolver set size:undefined disposed:false
+295 silly fetch manifest metro-babel-transformer@0.83.7
+296 silly packumentCache full:https://registry.npmjs.org/metro-babel-transformer cache-miss
+297 http fetch GET 200 https://registry.npmjs.org/metro-cache-key 71ms (cache miss)
+298 silly packumentCache full:https://registry.npmjs.org/metro-cache-key set size:undefined disposed:false
+299 silly fetch manifest metro-transform-plugins@0.83.7
+300 silly packumentCache full:https://registry.npmjs.org/metro-transform-plugins cache-miss
+301 http fetch GET 200 https://registry.npmjs.org/metro-source-map 75ms (cache miss)
+302 silly packumentCache full:https://registry.npmjs.org/metro-source-map set size:undefined disposed:false
+303 http fetch GET 200 https://registry.npmjs.org/metro-symbolicate 70ms (cache miss)
+304 silly packumentCache full:https://registry.npmjs.org/metro-symbolicate set size:undefined disposed:false
+305 http fetch GET 200 https://registry.npmjs.org/metro-babel-transformer 68ms (cache miss)
+306 silly packumentCache full:https://registry.npmjs.org/metro-babel-transformer set size:undefined disposed:false
+307 http fetch GET 200 https://registry.npmjs.org/metro-transform-worker 96ms (cache miss)
+308 silly packumentCache full:https://registry.npmjs.org/metro-transform-worker set size:undefined disposed:false
+309 http fetch GET 200 https://registry.npmjs.org/metro-transform-plugins 127ms (cache miss)
+310 silly packumentCache full:https://registry.npmjs.org/metro-transform-plugins set size:undefined disposed:false
+311 silly placeDep node_modules/@react-native/community-cli-plugin accepts@2.0.0 OK for: metro@0.83.7 want: ^2.0.0
+312 silly placeDep node_modules/@react-native/community-cli-plugin hermes-parser@0.35.0 OK for: metro@0.83.7 want: 0.35.0
+313 silly placeDep node_modules/@react-native/community-cli-plugin metro-babel-transformer@0.83.7 OK for: metro@0.83.7 want: 0.83.7
+314 silly placeDep node_modules/@react-native/community-cli-plugin metro-cache-key@0.83.7 OK for: metro@0.83.7 want: 0.83.7
+315 silly placeDep node_modules/@react-native/community-cli-plugin metro-file-map@0.83.7 OK for: metro@0.83.7 want: 0.83.7
+316 silly placeDep node_modules/@react-native/community-cli-plugin metro-resolver@0.83.7 OK for: metro@0.83.7 want: 0.83.7
+317 silly placeDep node_modules/@react-native/community-cli-plugin metro-source-map@0.83.7 OK for: metro@0.83.7 want: 0.83.7
+318 silly placeDep node_modules/@react-native/community-cli-plugin metro-symbolicate@0.83.7 OK for: metro@0.83.7 want: 0.83.7
+319 silly placeDep node_modules/@react-native/community-cli-plugin metro-transform-plugins@0.83.7 OK for: metro@0.83.7 want: 0.83.7
+320 silly placeDep node_modules/@react-native/community-cli-plugin metro-transform-worker@0.83.7 OK for: metro@0.83.7 want: 0.83.7
+321 silly placeDep node_modules/@react-native/community-cli-plugin mime-types@3.0.2 OK for: metro@0.83.7 want: ^3.0.1
+322 silly fetch manifest mime-types@^3.0.0
+323 silly packumentCache full:https://registry.npmjs.org/mime-types cache-miss
+324 silly fetch manifest negotiator@^1.0.0
+325 silly packumentCache full:https://registry.npmjs.org/negotiator cache-miss
+326 silly fetch manifest hermes-estree@0.35.0
+327 silly packumentCache full:https://registry.npmjs.org/hermes-estree cache-miss
+328 silly fetch manifest ob1@0.83.7
+329 silly packumentCache full:https://registry.npmjs.org/ob1 cache-miss
+330 silly fetch manifest metro-minify-terser@0.83.7
+331 silly packumentCache full:https://registry.npmjs.org/metro-minify-terser cache-miss
+332 http cache https://registry.npmjs.org/mime-types 11ms (cache hit)
+333 silly packumentCache full:https://registry.npmjs.org/mime-types set size:139110 disposed:false
+334 silly fetch manifest mime-db@^1.54.0
+335 silly packumentCache full:https://registry.npmjs.org/mime-db cache-miss
+336 http fetch GET 200 https://registry.npmjs.org/negotiator 66ms (cache miss)
+337 silly packumentCache full:https://registry.npmjs.org/negotiator set size:undefined disposed:false
+338 http fetch GET 200 https://registry.npmjs.org/ob1 71ms (cache miss)
+339 silly packumentCache full:https://registry.npmjs.org/ob1 set size:undefined disposed:false
+340 http fetch GET 200 https://registry.npmjs.org/hermes-estree 74ms (cache miss)
+341 silly packumentCache full:https://registry.npmjs.org/hermes-estree set size:undefined disposed:false
+342 http fetch GET 200 https://registry.npmjs.org/mime-db 66ms (cache miss)
+343 silly packumentCache full:https://registry.npmjs.org/mime-db set size:undefined disposed:false
+344 http fetch GET 200 https://registry.npmjs.org/metro-minify-terser 86ms (cache miss)
+345 silly packumentCache full:https://registry.npmjs.org/metro-minify-terser set size:undefined disposed:false
+346 silly placeDep node_modules/@react-native/community-cli-plugin negotiator@1.0.0 OK for: accepts@2.0.0 want: ^1.0.0
+347 silly placeDep node_modules/@react-native/community-cli-plugin hermes-estree@0.35.0 OK for: hermes-parser@0.35.0 want: 0.35.0
+348 silly placeDep node_modules/@react-native/community-cli-plugin ob1@0.83.7 OK for: metro-source-map@0.83.7 want: 0.83.7
+349 silly placeDep node_modules/@react-native/community-cli-plugin metro-minify-terser@0.83.7 OK for: metro-transform-worker@0.83.7 want: 0.83.7
+350 silly placeDep node_modules/@react-native/community-cli-plugin mime-db@1.54.0 OK for: mime-types@3.0.2 want: ^1.54.0
+351 silly placeDep node_modules/react-native minimatch@3.1.5 OK for: glob@7.2.3 want: ^3.1.1
+352 silly fetch manifest brace-expansion@^1.1.7
+353 silly packumentCache full:https://registry.npmjs.org/brace-expansion cache-miss
+354 http fetch GET 200 https://registry.npmjs.org/brace-expansion 51ms (cache miss)
+355 silly packumentCache full:https://registry.npmjs.org/brace-expansion set size:undefined disposed:false
+356 silly placeDep node_modules/react-native brace-expansion@1.1.14 OK for: minimatch@3.1.5 want: ^1.1.7
+357 silly fetch manifest balanced-match@^1.0.0
+358 silly packumentCache full:https://registry.npmjs.org/balanced-match cache-miss
+359 http fetch GET 200 https://registry.npmjs.org/balanced-match 203ms (cache miss)
+360 silly packumentCache full:https://registry.npmjs.org/balanced-match set size:undefined disposed:false
+361 silly placeDep node_modules/react-native balanced-match@1.0.2 OK for: brace-expansion@1.1.14 want: ^1.0.0
+362 silly reify mark retired [
+362 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@expo\\prebuild-config\\node_modules\\@react-native\\normalize-colors'
+362 silly reify ]
+363 silly reify mark retired [
+363 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\assets-registry'
+363 silly reify ]
+364 silly reify mark retired [
+364 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\community-cli-plugin'
+364 silly reify ]
+365 silly reify mark retired [
+365 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\debugger-frontend'
+365 silly reify ]
+366 silly reify mark retired [
+366 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\dev-middleware'
+366 silly reify ]
+367 silly reify mark retired [
+367 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\gradle-plugin'
+367 silly reify ]
+368 silly reify mark retired [
+368 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\normalize-colors'
+368 silly reify ]
+369 silly reify mark retired [
+369 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\expo\\node_modules\\@react-native\\debugger-frontend'
+369 silly reify ]
+370 silly reify mark retired [
+370 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\expo\\node_modules\\@react-native\\dev-middleware'
+370 silly reify ]
+371 silly reify mark retired [
+371 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\react-dom'
+371 silly reify ]
+372 silly reify mark retired [
+372 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\react-native',
+372 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\.bin\\react-native',
+372 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\.bin\\react-native.cmd',
+372 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\.bin\\react-native.ps1'
+372 silly reify ]
+373 silly reify mark retired [
+373 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\scheduler'
+373 silly reify ]
+374 silly reify moves {
+374 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@expo\\prebuild-config\\node_modules\\@react-native\\normalize-colors': 'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@expo\\prebuild-config\\node_modules\\@react-native\\.normalize-colors-ljG7wM1Q',
+374 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\assets-registry': 'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\.assets-registry-5N7CE26v',
+374 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\community-cli-plugin': 'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\.community-cli-plugin-OWirCDGL',
+374 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\debugger-frontend': 'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\.debugger-frontend-6enrWTle',
+374 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\dev-middleware': 'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\.dev-middleware-nrMzT4Ts',
+374 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\gradle-plugin': 'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\.gradle-plugin-Nw7uxVQQ',
+374 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\normalize-colors': 'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\@react-native\\.normalize-colors-sR7MxAPG',
+374 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\expo\\node_modules\\@react-native\\debugger-frontend': 'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\expo\\node_modules\\@react-native\\.debugger-frontend-OwleBHNu',
+374 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\expo\\node_modules\\@react-native\\dev-middleware': 'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\expo\\node_modules\\@react-native\\.dev-middleware-hGkfBn2h',
+374 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\react-dom': 'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\.react-dom-6ZD7kUIg',
+374 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\react-native': 'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\.react-native-Z0oooIKg',
+374 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\.bin\\react-native': 'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\.bin\\.react-native-TQrBjzQD',
+374 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\.bin\\react-native.cmd': 'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\.bin\\.react-native.cmd-tHWieU3Y',
+374 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\.bin\\react-native.ps1': 'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\.bin\\.react-native.ps1-zTQAE3d7',
+374 silly reify   'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\scheduler': 'D:\\arquivos\\samuel\\tudo\\party-game-ui\\node_modules\\.scheduler-OvjvkhHu'
+374 silly reify }
+375 http cache @react-native-async-storage/async-storage@https://registry.npmjs.org/@react-native-async-storage/async-storage/-/async-storage-2.2.0.tgz 0ms (cache hit)
+376 http cache is-plain-obj@https://registry.npmjs.org/is-plain-obj/-/is-plain-obj-2.1.0.tgz 0ms (cache hit)
+377 http cache merge-options@https://registry.npmjs.org/merge-options/-/merge-options-3.0.4.tgz 0ms (cache hit)
+378 http cache expo-av@https://registry.npmjs.org/expo-av/-/expo-av-16.0.8.tgz 0ms (cache hit)
+379 http cache scheduler@https://registry.npmjs.org/scheduler/-/scheduler-0.26.0.tgz 0ms (cache hit)
+380 http cache react-native@https://registry.npmjs.org/react-native/-/react-native-0.81.5.tgz 0ms (cache hit)
+381 http cache react-dom@https://registry.npmjs.org/react-dom/-/react-dom-19.1.0.tgz 0ms (cache hit)
+382 http cache @react-native/normalize-colors@https://registry.npmjs.org/@react-native/normalize-colors/-/normalize-colors-0.81.5.tgz 0ms (cache hit)
+383 http cache @react-native/gradle-plugin@https://registry.npmjs.org/@react-native/gradle-plugin/-/gradle-plugin-0.81.5.tgz 0ms (cache hit)
+384 http cache @react-native/dev-middleware@https://registry.npmjs.org/@react-native/dev-middleware/-/dev-middleware-0.81.5.tgz 0ms (cache hit)
+385 http cache @react-native/js-polyfills@https://registry.npmjs.org/@react-native/js-polyfills/-/js-polyfills-0.81.5.tgz 0ms (cache hit)
+386 http cache @react-native/debugger-frontend@https://registry.npmjs.org/@react-native/debugger-frontend/-/debugger-frontend-0.81.5.tgz 0ms (cache hit)
+387 http cache @react-native/community-cli-plugin@https://registry.npmjs.org/@react-native/community-cli-plugin/-/community-cli-plugin-0.81.5.tgz 0ms (cache hit)
+388 http cache @react-native/virtualized-lists@https://registry.npmjs.org/@react-native/virtualized-lists/-/virtualized-lists-0.81.5.tgz 0ms (cache hit)
+389 http cache @react-native/assets-registry@https://registry.npmjs.org/@react-native/assets-registry/-/assets-registry-0.81.5.tgz 0ms (cache hit)
+390 silly tarball no local data for @react-native-async-storage/async-storage@https://registry.npmjs.org/@react-native-async-storage/async-storage/-/async-storage-2.2.0.tgz. Extracting by manifest.
+391 http cache @react-native/codegen@https://registry.npmjs.org/@react-native/codegen/-/codegen-0.81.5.tgz 0ms (cache hit)
+392 silly tarball no local data for is-plain-obj@https://registry.npmjs.org/is-plain-obj/-/is-plain-obj-2.1.0.tgz. Extracting by manifest.
+393 silly tarball no local data for merge-options@https://registry.npmjs.org/merge-options/-/merge-options-3.0.4.tgz. Extracting by manifest.
+394 silly tarball no local data for expo-av@https://registry.npmjs.org/expo-av/-/expo-av-16.0.8.tgz. Extracting by manifest.
+395 silly tarball no local data for scheduler@https://registry.npmjs.org/scheduler/-/scheduler-0.26.0.tgz. Extracting by manifest.
+396 silly tarball no local data for react-native@https://registry.npmjs.org/react-native/-/react-native-0.81.5.tgz. Extracting by manifest.
+397 silly tarball no local data for react-dom@https://registry.npmjs.org/react-dom/-/react-dom-19.1.0.tgz. Extracting by manifest.
+398 silly tarball no local data for @react-native/normalize-colors@https://registry.npmjs.org/@react-native/normalize-colors/-/normalize-colors-0.81.5.tgz. Extracting by manifest.
+399 silly tarball no local data for @react-native/gradle-plugin@https://registry.npmjs.org/@react-native/gradle-plugin/-/gradle-plugin-0.81.5.tgz. Extracting by manifest.
+400 silly tarball no local data for @react-native/dev-middleware@https://registry.npmjs.org/@react-native/dev-middleware/-/dev-middleware-0.81.5.tgz. Extracting by manifest.
+401 silly tarball no local data for @react-native/js-polyfills@https://registry.npmjs.org/@react-native/js-polyfills/-/js-polyfills-0.81.5.tgz. Extracting by manifest.
+402 silly tarball no local data for @react-native/debugger-frontend@https://registry.npmjs.org/@react-native/debugger-frontend/-/debugger-frontend-0.81.5.tgz. Extracting by manifest.
+403 silly tarball no local data for @react-native/community-cli-plugin@https://registry.npmjs.org/@react-native/community-cli-plugin/-/community-cli-plugin-0.81.5.tgz. Extracting by manifest.
+404 silly tarball no local data for @react-native/virtualized-lists@https://registry.npmjs.org/@react-native/virtualized-lists/-/virtualized-lists-0.81.5.tgz. Extracting by manifest.
+405 silly tarball no local data for @react-native/assets-registry@https://registry.npmjs.org/@react-native/assets-registry/-/assets-registry-0.81.5.tgz. Extracting by manifest.
+406 silly tarball no local data for @react-native/codegen@https://registry.npmjs.org/@react-native/codegen/-/codegen-0.81.5.tgz. Extracting by manifest.
+407 http fetch GET 200 https://registry.npmjs.org/is-plain-obj/-/is-plain-obj-2.1.0.tgz 160ms (cache miss)
+408 http fetch GET 200 https://registry.npmjs.org/scheduler/-/scheduler-0.26.0.tgz 275ms (cache miss)
+409 http fetch GET 200 https://registry.npmjs.org/merge-options/-/merge-options-3.0.4.tgz 289ms (cache miss)
+410 http fetch GET 200 https://registry.npmjs.org/@react-native/normalize-colors/-/normalize-colors-0.81.5.tgz 346ms (cache miss)
+411 http fetch GET 200 https://registry.npmjs.org/@react-native/assets-registry/-/assets-registry-0.81.5.tgz 344ms (cache miss)
+412 http fetch GET 200 https://registry.npmjs.org/@react-native/js-polyfills/-/js-polyfills-0.81.5.tgz 353ms (cache miss)
+413 http fetch GET 200 https://registry.npmjs.org/@react-native/virtualized-lists/-/virtualized-lists-0.81.5.tgz 957ms (cache miss)
+414 http fetch GET 200 https://registry.npmjs.org/@react-native/community-cli-plugin/-/community-cli-plugin-0.81.5.tgz 1645ms (cache miss)
+415 http fetch GET 200 https://registry.npmjs.org/@react-native/dev-middleware/-/dev-middleware-0.81.5.tgz 1796ms (cache miss)
+416 http fetch GET 200 https://registry.npmjs.org/react-dom/-/react-dom-19.1.0.tgz 2595ms (cache miss)
+417 http fetch GET 200 https://registry.npmjs.org/@react-native-async-storage/async-storage/-/async-storage-2.2.0.tgz 4656ms (cache miss)
+418 http fetch GET 200 https://registry.npmjs.org/@react-native/gradle-plugin/-/gradle-plugin-0.81.5.tgz 5098ms (cache miss)
+419 http fetch GET 200 https://registry.npmjs.org/@react-native/codegen/-/codegen-0.81.5.tgz 7342ms (cache miss)
+420 http fetch GET 200 https://registry.npmjs.org/expo-av/-/expo-av-16.0.8.tgz 7549ms (cache miss)
+421 http fetch GET 200 https://registry.npmjs.org/@react-native/debugger-frontend/-/debugger-frontend-0.81.5.tgz 13148ms (cache miss)
+422 http fetch GET 200 https://registry.npmjs.org/react-native/-/react-native-0.81.5.tgz 34281ms (cache miss)
+423 silly ADD node_modules/is-plain-obj
+424 silly ADD node_modules/merge-options
+425 silly ADD node_modules/expo-av
+426 silly ADD node_modules/@react-native-async-storage/async-storage
+427 silly CHANGE node_modules/scheduler
+428 silly CHANGE node_modules/react-native
+429 silly REMOVE node_modules/react-native/node_modules/scheduler
+430 silly CHANGE node_modules/react-native/node_modules/@react-native/virtualized-lists
+431 silly CHANGE node_modules/react-native/node_modules/@react-native/js-polyfills
+432 silly CHANGE node_modules/react-native/node_modules/@react-native/codegen
+433 silly CHANGE node_modules/react-dom
+434 silly REMOVE node_modules/expo/node_modules/@react-native/dev-middleware
+435 silly REMOVE node_modules/expo/node_modules/@react-native/dev-middleware/node_modules/ws
+436 silly REMOVE node_modules/expo/node_modules/@react-native/debugger-frontend
+437 silly CHANGE node_modules/@react-native/normalize-colors
+438 silly CHANGE node_modules/@react-native/gradle-plugin
+439 silly CHANGE node_modules/@react-native/dev-middleware
+440 silly CHANGE node_modules/@react-native/debugger-frontend
+441 silly CHANGE node_modules/@react-native/community-cli-plugin
+442 silly CHANGE node_modules/@react-native/assets-registry
+443 silly REMOVE node_modules/@expo/prebuild-config/node_modules/@react-native/normalize-colors
+444 verbose cwd D:\arquivos\samuel\tudo\party-game-ui
+445 verbose os Windows_NT 10.0.19045
+446 verbose node v22.18.0
+447 verbose npm  v11.6.2
+448 verbose exit 0
+449 info ok
