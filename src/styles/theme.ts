@@ -6,6 +6,8 @@ export type ThemeName = 'dark' | 'neon' | 'calm' | 'party';
 type ThemeColors = {
   background: string;
   backgroundSoft: string;
+  surface: string;
+  surfaceStrong: string;
   panel: string;
   panelStrong: string;
   panelLight: string;
@@ -15,6 +17,11 @@ type ThemeColors = {
   textDark: string;
   muted: string;
   mutedStrong: string;
+  accent: string;
+  accentSoft: string;
+  onAccent: string;
+  danger: string;
+  dangerSoft: string;
   cyan: string;
   blue: string;
   lime: string;
@@ -47,15 +54,22 @@ export const themes: Record<ThemeName, AppTheme> = {
     colors: {
       background: '#070A14',
       backgroundSoft: '#101827',
-      panel: 'rgba(255,255,255,0.075)',
+      surface: 'rgba(255,255,255,0.92)',
+      surfaceStrong: 'rgba(255,255,255,0.12)',
+      panel: 'rgba(255,255,255,0.92)',
       panelStrong: 'rgba(255,255,255,0.12)',
       panelLight: 'rgba(255,255,255,0.92)',
-      border: 'rgba(255,255,255,0.12)',
+      border: 'rgba(15,23,42,0.12)',
       borderStrong: 'rgba(255,255,255,0.2)',
-      text: '#F8FAFC',
+      text: '#101827',
       textDark: '#101827',
-      muted: 'rgba(226,232,240,0.72)',
-      mutedStrong: 'rgba(226,232,240,0.88)',
+      muted: '#64748B',
+      mutedStrong: '#334155',
+      accent: '#2563EB',
+      accentSoft: 'rgba(37,99,235,0.12)',
+      onAccent: '#FFFFFF',
+      danger: '#DC2626',
+      dangerSoft: 'rgba(220,38,38,0.1)',
       cyan: '#67E8F9',
       blue: '#38BDF8',
       lime: '#BEF264',
@@ -64,11 +78,11 @@ export const themes: Record<ThemeName, AppTheme> = {
       violet: '#A78BFA',
     },
     gradients: {
-      screen: ['#070A14', '#101827', '#1E1B4B'],
-      screenAlt: ['#070A14', '#111827', '#312E81'],
-      primary: ['#BEF264', '#67E8F9'],
-      secondary: ['rgba(255,255,255,0.16)', 'rgba(255,255,255,0.08)'],
-      dark: ['rgba(255,255,255,0.1)', 'rgba(255,255,255,0.04)'],
+      screen: ['#F8FAFC', '#EEF2FF', '#E0F2FE'],
+      screenAlt: ['#F8FAFC', '#F1F5F9', '#E2E8F0'],
+      primary: ['#2563EB', '#0891B2'],
+      secondary: ['rgba(255,255,255,0.94)', 'rgba(241,245,249,0.94)'],
+      dark: ['rgba(15,23,42,0.08)', 'rgba(15,23,42,0.04)'],
     },
   },
   neon: {
@@ -77,6 +91,8 @@ export const themes: Record<ThemeName, AppTheme> = {
     colors: {
       background: '#05030D',
       backgroundSoft: '#120A24',
+      surface: 'rgba(255,255,255,0.92)',
+      surfaceStrong: 'rgba(255,255,255,0.12)',
       panel: 'rgba(255,255,255,0.08)',
       panelStrong: 'rgba(255,255,255,0.14)',
       panelLight: 'rgba(255,255,255,0.94)',
@@ -86,6 +102,11 @@ export const themes: Record<ThemeName, AppTheme> = {
       textDark: '#0B0614',
       muted: 'rgba(245,208,254,0.72)',
       mutedStrong: 'rgba(245,208,254,0.9)',
+      accent: '#7C3AED',
+      accentSoft: 'rgba(124,58,237,0.16)',
+      onAccent: '#FFFFFF',
+      danger: '#FB7185',
+      dangerSoft: 'rgba(251,113,133,0.14)',
       cyan: '#22D3EE',
       blue: '#60A5FA',
       lime: '#D9F99D',
@@ -107,6 +128,8 @@ export const themes: Record<ThemeName, AppTheme> = {
     colors: {
       background: '#071214',
       backgroundSoft: '#0E2428',
+      surface: 'rgba(240,253,250,0.94)',
+      surfaceStrong: 'rgba(236,253,245,0.13)',
       panel: 'rgba(236,253,245,0.075)',
       panelStrong: 'rgba(236,253,245,0.13)',
       panelLight: 'rgba(240,253,250,0.94)',
@@ -116,6 +139,11 @@ export const themes: Record<ThemeName, AppTheme> = {
       textDark: '#082F2E',
       muted: 'rgba(204,251,241,0.68)',
       mutedStrong: 'rgba(204,251,241,0.88)',
+      accent: '#0F766E',
+      accentSoft: 'rgba(15,118,110,0.16)',
+      onAccent: '#FFFFFF',
+      danger: '#E11D48',
+      dangerSoft: 'rgba(225,29,72,0.14)',
       cyan: '#99F6E4',
       blue: '#7DD3FC',
       lime: '#CCFBF1',
@@ -137,6 +165,8 @@ export const themes: Record<ThemeName, AppTheme> = {
     colors: {
       background: '#120917',
       backgroundSoft: '#24111F',
+      surface: 'rgba(255,247,237,0.94)',
+      surfaceStrong: 'rgba(255,255,255,0.14)',
       panel: 'rgba(255,255,255,0.08)',
       panelStrong: 'rgba(255,255,255,0.14)',
       panelLight: 'rgba(255,247,237,0.94)',
@@ -146,6 +176,11 @@ export const themes: Record<ThemeName, AppTheme> = {
       textDark: '#1F130B',
       muted: 'rgba(254,215,170,0.72)',
       mutedStrong: 'rgba(254,215,170,0.9)',
+      accent: '#C2410C',
+      accentSoft: 'rgba(194,65,12,0.16)',
+      onAccent: '#FFFFFF',
+      danger: '#E11D48',
+      dangerSoft: 'rgba(225,29,72,0.14)',
       cyan: '#FDBA74',
       blue: '#F0ABFC',
       lime: '#FDE68A',
@@ -167,9 +202,70 @@ export const themeNames = Object.keys(themes) as ThemeName[];
 export const colors = themes.dark.colors;
 export const gradients = themes.dark.gradients;
 export const radii = {
-  button: 20,
-  card: 24,
+  sm: 10,
+  md: 16,
+  lg: 22,
+  button: 16,
+  card: 22,
   chip: 999,
+  pill: 999,
+};
+
+export const spacing = {
+  xs: 8,
+  sm: 12,
+  md: 16,
+  lg: 24,
+  xl: 32,
+};
+
+export const typography = {
+  eyebrow: {
+    fontSize: 12,
+    fontWeight: '900' as const,
+    letterSpacing: 0,
+    textTransform: 'uppercase' as const,
+  },
+  h1: {
+    fontSize: 31,
+    fontWeight: '900' as const,
+    letterSpacing: 0,
+  },
+  h2: {
+    fontSize: 24,
+    fontWeight: '900' as const,
+    letterSpacing: 0,
+  },
+  h3: {
+    fontSize: 18,
+    fontWeight: '900' as const,
+    letterSpacing: 0,
+  },
+  body: {
+    fontSize: 16,
+    lineHeight: 23,
+    letterSpacing: 0,
+  },
+  caption: {
+    fontSize: 13,
+    lineHeight: 18,
+    letterSpacing: 0,
+  },
+  button: {
+    fontSize: 16,
+    fontWeight: '900' as const,
+    letterSpacing: 0,
+  },
+};
+
+export const shadows = {
+  card: {
+    shadowColor: '#0F172A',
+    shadowOpacity: 0.08,
+    shadowRadius: 18,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 3,
+  },
 };
 
 type ThemeContextValue = {

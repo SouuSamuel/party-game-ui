@@ -4,8 +4,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { modes } from '../data/modes';
 import { colors, gradients, radii, useAppTheme } from '../styles/theme';
+import { Ionicons } from '@expo/vector-icons';
+import { AppHeader, AppScreen, Card, Chip } from '../components/ui';
+import { gameRegistry } from '../games/registry';
+import { spacing, typography } from '../styles/theme';
 
-export default function ModesScreen() {
+function OldModesScreen() {
   const theme = useAppTheme();
 
   return (
@@ -96,4 +100,62 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
   arrow: { color: colors.muted, fontSize: 24, fontWeight: '900', marginLeft: 10 },
+});
+
+export default function ModesScreen() {
+  const theme = useAppTheme();
+
+  return (
+    <AppScreen variant="soft">
+      <SafeAreaView style={gameStyles.safe}>
+        <AppHeader eyebrow="Escolha um jogo" title="Modos do GroupGames" onBack={() => router.back()} />
+        <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={gameStyles.list}>
+          {gameRegistry.map((game) => (
+            <Pressable
+              key={game.id}
+              onPress={() => {
+                if (game.setupRoute === '/setup') {
+                  router.push({ pathname: '/setup', params: { modeId: game.id } });
+                  return;
+                }
+                router.push(game.setupRoute);
+              }}
+              style={({ pressed }) => [pressed && gameStyles.pressed]}
+            >
+              <Card style={gameStyles.card}>
+                <View style={[gameStyles.iconBox, { backgroundColor: `${game.color}1F` }]}>
+                  <Ionicons name={game.icon} size={25} color={game.color} />
+                </View>
+                <View style={gameStyles.cardContent}>
+                  <View style={gameStyles.cardTop}>
+                    <Text style={[gameStyles.cardTitle, { color: theme.colors.text }]}>{game.name}</Text>
+                    <Chip label={game.status === 'ready' ? 'Pronto' : game.status} selected />
+                  </View>
+                  <Text style={[gameStyles.cardDescription, { color: theme.colors.mutedStrong }]}>{game.description}</Text>
+                  <View style={gameStyles.metaRow}>
+                    <Chip label={`mín. ${game.minPlayers}`} icon="people-outline" />
+                    {game.maxPlayers ? <Chip label={`máx. ${game.maxPlayers}`} icon="person-add-outline" /> : null}
+                  </View>
+                </View>
+                <Ionicons name="chevron-forward" size={22} color={theme.colors.muted} />
+              </Card>
+            </Pressable>
+          ))}
+        </ScrollView>
+      </SafeAreaView>
+    </AppScreen>
+  );
+}
+
+const gameStyles = StyleSheet.create({
+  safe: { flex: 1, paddingHorizontal: spacing.lg, paddingTop: spacing.sm },
+  list: { paddingBottom: spacing.xl, gap: spacing.sm },
+  pressed: { transform: [{ scale: 0.99 }], opacity: 0.9 },
+  card: { minHeight: 132, flexDirection: 'row', alignItems: 'center', gap: spacing.md },
+  iconBox: { width: 52, height: 52, borderRadius: 18, alignItems: 'center', justifyContent: 'center' },
+  cardContent: { flex: 1, gap: spacing.xs },
+  cardTop: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: spacing.sm },
+  cardTitle: { ...typography.h3 },
+  cardDescription: { ...typography.caption },
+  metaRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.xs, marginTop: 2 },
 });

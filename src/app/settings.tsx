@@ -5,8 +5,10 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { radii, themeNames, themes, useThemeController } from '../styles/theme';
 import { getSoundEnabled, playSoundEffect, setSoundEnabled } from '../utils/audio';
+import { AppButton, AppHeader, AppScreen, Card } from '../components/ui';
+import { spacing, typography } from '../styles/theme';
 
-export default function SettingsScreen() {
+function OldSettingsScreen() {
   const { theme, themeName, setThemeName } = useThemeController();
   const { colors, gradients } = theme;
   const [soundsEnabled, setSoundsEnabled] = useState(true);
@@ -127,4 +129,80 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     marginBottom: 6,
   },
+});
+
+export default function SettingsScreen() {
+  const { theme, themeName, setThemeName } = useThemeController();
+  const { colors } = theme;
+  const [soundsEnabled, setSoundsEnabled] = useState(true);
+
+  useEffect(() => {
+    void getSoundEnabled().then(setSoundsEnabled);
+  }, []);
+
+  function toggleSounds() {
+    const nextValue = !soundsEnabled;
+    setSoundsEnabled(nextValue);
+    void setSoundEnabled(nextValue);
+    if (nextValue) {
+      void playSoundEffect('click');
+    }
+  }
+
+  return (
+    <AppScreen variant="soft">
+      <SafeAreaView style={settingsStyles.safe}>
+        <AppHeader title="Configurações" eyebrow="GroupGames" onBack={() => router.back()} />
+        <View style={settingsStyles.content}>
+          <Card style={settingsStyles.card}>
+            <View style={settingsStyles.optionRow}>
+              <View style={settingsStyles.flex}>
+                <Text style={[settingsStyles.optionTitle, { color: colors.text }]}>Sons do jogo</Text>
+                <Text style={[settingsStyles.optionDescription, { color: colors.mutedStrong }]}>Efeitos curtos para cliques, acertos e fim de turno.</Text>
+              </View>
+              <AppButton label={soundsEnabled ? 'Ativado' : 'Desativado'} variant={soundsEnabled ? 'primary' : 'secondary'} style={settingsStyles.statusButton} onPress={toggleSounds} />
+            </View>
+          </Card>
+
+          <Card style={settingsStyles.card}>
+            <Text style={[settingsStyles.sectionTitle, { color: colors.text }]}>Tema</Text>
+            <View style={settingsStyles.themeGrid}>
+              {themeNames.map((name) => (
+                <Pressable
+                  key={name}
+                  onPress={() => {
+                    void playSoundEffect('click');
+                    void setThemeName(name);
+                  }}
+                  style={[
+                    settingsStyles.themeButton,
+                    { backgroundColor: colors.surfaceStrong, borderColor: name === themeName ? colors.accent : colors.border },
+                  ]}
+                >
+                  <Text style={[settingsStyles.themeText, { color: colors.text }]}>{themes[name].label}</Text>
+                </Pressable>
+              ))}
+            </View>
+          </Card>
+        </View>
+        <Text style={[settingsStyles.credit, { color: colors.muted }]}>Feito por Samuel Nascimento</Text>
+      </SafeAreaView>
+    </AppScreen>
+  );
+}
+
+const settingsStyles = StyleSheet.create({
+  safe: { flex: 1, padding: spacing.lg },
+  content: { flex: 1, gap: spacing.md },
+  card: { gap: spacing.sm },
+  optionRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.md },
+  flex: { flex: 1 },
+  optionTitle: { ...typography.h3 },
+  optionDescription: { ...typography.caption, marginTop: 4 },
+  statusButton: { minWidth: 126 },
+  sectionTitle: { ...typography.h3 },
+  themeGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
+  themeButton: { width: '48%', minHeight: 54, borderRadius: 16, borderWidth: 1, alignItems: 'center', justifyContent: 'center', paddingHorizontal: spacing.sm },
+  themeText: { fontWeight: '900', textAlign: 'center' },
+  credit: { textAlign: 'center', fontWeight: '800', marginBottom: 6 },
 });

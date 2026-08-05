@@ -18,4 +18,4 @@ export function getRandomPhraseCutWord(bank) {
 
 export function getRandomNote() {
   return Math.floor(Math.random() * 11);
-32
+}

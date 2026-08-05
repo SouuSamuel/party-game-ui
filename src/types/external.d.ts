@@ -15,10 +15,24 @@ declare module 'expo-av' {
   };
 }
 
+declare module 'expo-linear-gradient' {
+  import type { ComponentType, ReactNode } from 'react';
+  import type { ViewStyle } from 'react-native';
+
+  export const LinearGradient: ComponentType<{
+    colors: readonly string[];
+    start?: { x: number; y: number };
+    end?: { x: number; y: number };
+    style?: ViewStyle | ViewStyle[];
+    children?: ReactNode;
+  }>;
+}
+
 declare module '@react-native-async-storage/async-storage' {
   const AsyncStorage: {
     getItem: (key: string) => Promise<string | null>;
     setItem: (key: string, value: string) => Promise<void>;
+    removeItem: (key: string) => Promise<void>;
   };
 
   export default AsyncStorage;

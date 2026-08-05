@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Hangout",
+    "name": "GroupGames",
     "slug": "hangout",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,7 +11,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#070A14"
+      "backgroundColor": "#101315"
     },
     "ios": {
       "supportsTablet": true
@@ -19,19 +19,26 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#070A14"
+        "backgroundColor": "#101315"
       },
       "edgeToEdgeEnabled": true,
       "package": "com.sousamuel.hangout"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-font"
     ],
     "extra": {
       "router": {},
       "eas": {
         "projectId": "b61ae003-333c-418c-849b-89ecec4306a4"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/b61ae003-333c-418c-849b-89ecec4306a4"
     }
   }
 }

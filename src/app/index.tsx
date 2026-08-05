@@ -5,8 +5,11 @@ import { StyleSheet, Text, View } from 'react-native';
 import { PartyButton } from '../components/PartyButton';
 import { FloatingDecorations } from '../components/FloatingDecorations';
 import { colors, gradients, radii, useAppTheme } from '../styles/theme';
+import { Ionicons } from '@expo/vector-icons';
+import { AppButton, AppScreen, Card, Chip } from '../components/ui';
+import { spacing, typography } from '../styles/theme';
 
-export default function HomeScreen() {
+function OldHomeScreen() {
   const theme = useAppTheme();
 
   return (
@@ -66,5 +69,60 @@ const styles = StyleSheet.create({
     marginBottom: 18,
   },
   footer: { color: colors.muted, textAlign: 'center', fontWeight: '700', marginBottom: 8 },
+  credit: { textAlign: 'center', fontSize: 12, fontWeight: '800', opacity: 0.78, marginBottom: 8 },
+});
+
+export default function HomeScreen() {
+  const theme = useAppTheme();
+
+  return (
+    <AppScreen>
+      <SafeAreaView style={homeStyles.container}>
+        <View style={homeStyles.hero}>
+          <View style={[homeStyles.mark, { backgroundColor: theme.colors.accent }]}>
+            <Ionicons name="people-outline" size={34} color={theme.colors.onAccent} />
+          </View>
+          <View style={homeStyles.chips}>
+            <Chip label="Offline" icon="cloud-offline-outline" />
+            <Chip label="Presencial" icon="phone-portrait-outline" />
+          </View>
+          <Text style={[homeStyles.title, { color: theme.colors.text }]}>GroupGames</Text>
+          <Text style={[homeStyles.subtitle, { color: theme.colors.mutedStrong }]}>
+            Jogos sociais para grupos jogarem no mesmo celular, com regras rápidas e partidas leves.
+          </Text>
+        </View>
+
+        <Card style={homeStyles.menu}>
+          <AppButton label="Jogar" icon="play-outline" onPress={() => router.push('/modes')} />
+          <AppButton label="Jogar online" icon="globe-outline" variant="secondary" onPress={() => router.push('/online')} />
+          <AppButton label="Regras" icon="reader-outline" variant="secondary" onPress={() => router.push('/rules')} />
+          <AppButton label="Configurações" icon="settings-outline" variant="secondary" onPress={() => router.push('/settings')} />
+        </Card>
+
+        <View>
+          <Text style={[homeStyles.footer, { color: theme.colors.muted }]}>Feito para uma rodada rápida, sem internet e sem cadastro.</Text>
+          <Text style={[homeStyles.credit, { color: theme.colors.muted }]}>Feito por Samuel Nascimento</Text>
+        </View>
+      </SafeAreaView>
+    </AppScreen>
+  );
+}
+
+const homeStyles = StyleSheet.create({
+  container: { flex: 1, padding: spacing.lg, justifyContent: 'space-between' },
+  hero: { alignItems: 'center', marginTop: 42 },
+  mark: {
+    width: 76,
+    height: 76,
+    borderRadius: 24,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: spacing.md,
+  },
+  chips: { flexDirection: 'row', gap: spacing.xs, marginBottom: spacing.md },
+  title: { fontSize: 42, fontWeight: '900', textAlign: 'center', letterSpacing: 0 },
+  subtitle: { ...typography.body, textAlign: 'center', marginTop: spacing.sm, maxWidth: 360 },
+  menu: { gap: spacing.sm, marginBottom: spacing.md },
+  footer: { textAlign: 'center', fontWeight: '700', marginBottom: 8 },
   credit: { textAlign: 'center', fontSize: 12, fontWeight: '800', opacity: 0.78, marginBottom: 8 },
 });

@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "Node16",
+    "moduleResolution": "node16",
+    "outDir": "build-tests",
+    "rootDir": ".",
+    "noEmit": false,
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "src/games/**/*.ts",
+    "src/online/**/*.ts",
+    "src/data/**/*.ts",
+    "src/utils/**/*.ts",
+    "scripts/**/*.ts",
+    "tests/**/*.ts"
+  ]
+}
